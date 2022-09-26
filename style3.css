@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+span{
+    margin-right: 10px;
+}
+.happy{
+    background-color: orange;
+}
+.ind{
+    background-color: white;
+}
+.day{
+    background-color: green;
+}
+.road {
+    background-image: url(Images/road.jpg);
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 500%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    animation: road 5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes road {
+    100% {
+        transform: translateX(-3400px);
+    }
+}
+
+.buildings {
+    background-image: url(Images/city.png);
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 500%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    bottom: 200px;
+    animation: buildings 20s linear infinite;
+}
+
+@keyframes buildings {
+    100% {
+        transform: translateX(-1100px);
+    }
+}
+
+.car {
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car img {
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.wheels{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheels img {
+    width: 72px;
+    height: 72px;
+    animation: wheels 1s linear infinite;
+}
+@keyframes wheels{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.back { 
+    left: -165px;
+    position: absolute;
+}
+
+.front {
+    left: 80px;
+    position: absolute;
+}
+.flag {
+    width: 400px;
+    left: 60%;
+    bottom: 180px;
+    position: absolute;
+    z-index: 2;
+}
+
+.flag img {
+    width: 20%;
+    animation: car 1s linear infinite;
+}
+.sun {
+    width: 400px;
+    left: 80%;
+    bottom: 400px;
+    position: absolute;
+
+}
+
+.sun img {
+    width: 20%;
+}
